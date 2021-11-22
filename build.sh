@@ -14,6 +14,7 @@ fi
 # Check if rename is installed
 if [ ! -f /usr/bin/rename ];
 	then echo "ERROR: Cannot find rename. Is it installed?"
+	exit 130
 fi
 
 # Warn user if sudo/root account is detected.
