@@ -9,6 +9,9 @@ Don't ask me! ¯\_(ツ)_/¯
 Make sure your Debian build tools are installed correctly.<br>
 ```sudo apt-get install build-essential```
 
+Also make sure that rename is installed to add quality of life to the compiling process.<br>
+```sudo apt-get install rename```
+
 Clone this repository.<br>
 ```git clone https://www.gitlab.com/Plexer0/LinuxFanboy.git```
 
