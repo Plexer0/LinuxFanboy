@@ -18,7 +18,7 @@ Clone this repository.<br>
 Compile the C++ scripts. (You can do so manually, or with the [build.sh](https://gitlab.com/Plexer0/LinuxFanboy/-/blob/master/build.sh) script.)
 
 Build the Debian package with dpkg.<br>
-```dpkg-deb --build-package LinuxFanboy```
+```dpkg-deb --build LinuxFanboy```
 
 Then, install the package on the appropiate system.<br>
 ```sudo dpkg -i *.deb```
