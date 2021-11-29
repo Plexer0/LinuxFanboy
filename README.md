@@ -1,6 +1,8 @@
 # Linux Fanboy
 This is just a silly little Debian package that adds Windows commands to your /usr/bin folder.
-When you execute them, you will receive a message that a stereotypical hardcore Linux fan would respond.
+When you execute them, you will receive a message that a stereotypical hardcore Linux fan would respond. 
+
+**Please take these messages with a grain of salt. They aren't purposely aimed at anyone, nor towards Windows or Microsoft. This silly application exists just for fun.**
 
 # Why would I install this?
 Don't ask me! ¯\_(ツ)_/¯
