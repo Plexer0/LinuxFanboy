@@ -39,6 +39,7 @@ find -type f -name '*.cpp' | while read f; do mv "$f" "${f%.cpp}"; done
 
 # Build Debian package
 echo "Building package..."
+chmod 555 $pwd/DEBIAN/postinst
 dpkg-deb --build $pwd
 mv ../LinuxFanboy.deb $pwd
 # Install package on the current system

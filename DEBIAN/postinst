@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Remove stale files from version control
+rm /build.sh
+rm /README.md
+rm /CONTRIBUTING.md
+rm -rf /.git
