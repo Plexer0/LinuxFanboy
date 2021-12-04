@@ -4,4 +4,5 @@
 rm /build.sh
 rm /README.md
 rm /CONTRIBUTING.md
+rm /LICENSE
 rm -rf /.git

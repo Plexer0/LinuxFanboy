@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script compiles all the C++ scripts so you can build the Debian package.
-# You need to have the build-essential package installed before continuing.
+# You need to have the build-essential package and the rename package installed before continuing.
 
 # Selfcheck
 
@@ -19,7 +19,7 @@ fi
 
 # Warn user if sudo/root account is detected.
 if [ $(id -u) -eq 0 ];
-	then echo "WARNING: sudo/root user detected. This may cause unwanted behaviour."
+	then echo "WARNING: sudo/root user detected. This may cause unwanted behaviour!"
 fi
 
 # Assign working directory
@@ -28,7 +28,7 @@ pwd=$(pwd)
 # Compile C++ scripts
 for segment in $pwd/usr/bin/*; do
 	echo "Compiling $segment"
-	g++ $segment -o $segment.exe
+	g++ $segment -o $segment.exe # Random .exe extension is for rename
 done
 
 # Cleanup environment (Can be restored with git reset)
@@ -39,12 +39,11 @@ find -type f -name '*.cpp' | while read f; do mv "$f" "${f%.cpp}"; done
 
 # Build Debian package
 echo "Building package..."
-chmod 555 $pwd/DEBIAN/postinst
+chmod 555 $pwd/DEBIAN/postinst # Build will fail if permissions aren't correct
 dpkg-deb --build $pwd
-mv ../LinuxFanboy.deb $pwd
 # Install package on the current system
 echo "Installing package..."
-sudo dpkg -i *.deb
+sudo dpkg -i ../*.deb
 
 # Announce Success
 echo "LinuxFanboy is installed! :)"
