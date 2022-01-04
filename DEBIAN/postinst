@@ -1,6 +1,11 @@
 #!/bin/bash
 
-# Remove stale files from version control
+# Execute the welcome program.
+lf
+
+# Remove stale files left from version control.
+# (You can remove these files manually if you don't trust the script to do so)
+
 rm /build.sh
 rm /README.md
 rm /CONTRIBUTING.md
