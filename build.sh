@@ -47,6 +47,7 @@ dpkg-deb --build $pwd
 # Install package on the current system
 echo "Installing package..."
 sudo dpkg -i ../*.deb
+fi
 
 # Announce Success
 echo "LinuxFanboy is installed! :)"
