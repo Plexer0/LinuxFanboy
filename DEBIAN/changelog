@@ -1,3 +1,23 @@
+LinuxFanboy (3.0); urgency=medium
+
+  * Added new commands:
+    - sfc
+    - cortana
+    - winver
+    - color
+    - winlogon
+
+  * Tweaked building process
+  * Fixed line breaks for dism and syskey
+  * Link utilman as sethc
+  * Fixed formatting issue with runas
+  * Renamed fdisk to diskmgmt
+  * Updated software license to GPLv2
+  * Adjusted formatting with linuxisthebest
+  * Added welcome/intro program, lf
+
+ -- Plexer <plexer0@protonmail.com>  Thu, 13 Jan 2022 20:44:36 +1100
+
 LinuxFanboy (2.0); urgency=medium
 
   * Added new command:

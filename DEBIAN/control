@@ -1,10 +1,10 @@
 Package: LinuxFanboy
-Version: 2.0
+Version: 3.0
 Section: custom
 Priority: optional
 Architecture: all
 Essential: no
 Depends: neofetch
-Installed-Size: 29.7
+Installed-Size: 21.1
 Maintainer: Plexer <plexer0@protonmail.com>
 Description: This is just a silly little Debian package that adds Windows commands to your /usr/bin folder. When you execute them, you will receive a message that a stereotypical hardcore Linux fan would respond.
