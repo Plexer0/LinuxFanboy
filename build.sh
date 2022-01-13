@@ -38,6 +38,9 @@ find -type f -name '*.cpp' | while read f; do mv "$f" "${f%.cpp}"; done
 
 
 # Build Debian package
+if [ $SKIP_BUILD -eq 1 ]; # Pass "SKIP_BUILD=1 sh build.sh" to skip build and install
+        then echo "Building and Installer skipped."
+else
 echo "Building package..."
 chmod 555 $pwd/DEBIAN/postinst # Build will fail if permissions aren't correct
 dpkg-deb --build $pwd
