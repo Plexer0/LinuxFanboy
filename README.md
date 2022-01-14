@@ -28,4 +28,4 @@ Then, install the package on the appropiate system.<br>
 # Contributions
 **This area will be populated when someone adds other Windows commands + messages.** <br>
 
-If you have an idea for a command + message to add, see CONTRIBUTING.md
+If you have an idea for a command + message to add, see [CONTRIBUTING.md](CONTRIBUTING.md)
