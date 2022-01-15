@@ -17,7 +17,7 @@ Also make sure that rename is installed to add quality of life to the compiling 
 Clone this repository.<br>
 ```git clone https://www.gitlab.com/Plexer0/LinuxFanboy.git```
 
-Compile the C++ scripts. (You can do so manually, or with the [build.sh](https://gitlab.com/Plexer0/LinuxFanboy/-/blob/master/build.sh) script.)
+Compile the C++ scripts. (You can do so manually, or with the [build.sh](build.sh) script.)
 
 Build the Debian package with dpkg.<br>
 ```dpkg-deb --build LinuxFanboy```
