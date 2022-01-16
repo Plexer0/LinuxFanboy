@@ -17,10 +17,10 @@ Also make sure that rename is installed to add quality of life to the compiling 
 Clone this repository.<br>
 ```git clone https://www.gitlab.com/Plexer0/LinuxFanboy.git```
 
-Compile the C++ scripts. (You can do so manually, or with the [build.sh](build.sh) script.)
+Compile the C++ scripts. (You can do so with the [build.sh](build.sh) script in the repository folder.)
 
 Build the Debian package with dpkg.<br>
-```dpkg-deb --build LinuxFanboy```
+```dpkg-deb --build /path/to/LinuxFanboy```
 
 Then, install the package on the appropiate system.<br>
 ```sudo dpkg -i *.deb```
@@ -28,4 +28,4 @@ Then, install the package on the appropiate system.<br>
 # Contributions
 **This area will be populated when someone adds other Windows commands + messages.** <br>
 
-If you have an idea for a command + message to add, see [CONTRIBUTING.md](CONTRIBUTING.md)
+If you have an idea for a command + message to add, see [CONTRIBUTING.md.](CONTRIBUTING.md)
