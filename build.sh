@@ -31,7 +31,9 @@ fi
 # Run debugging tests if requested
 if [ "$DEBUG_TESTS" == "y" ];
 	then pwd=$(pwd) && rm $pwd/usr/bin/*.cpp && for binary in $pwd/usr/bin/*; do
-	echo "DEBUG: Testing binary..."
+	echo "---------------------------"
+	echo "DEBUG: Testing binary, $binary"
+	echo "---------------------------"
 	$binary
 	done
 	exit
