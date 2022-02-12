@@ -3,7 +3,7 @@
 This is just a silly little Debian package that adds Windows commands to your /usr/bin folder.
 When you execute them, you will receive a message that a stereotypical hardcore Linux fan would respond. 
 
-**Please note that none of these responces are purposely aimed at anyone, nor towards Microsoft or the Linux community. This silly application exists just for fun and entertainment.**
+**Please note that none of these responses are purposely aimed at anyone, nor towards Microsoft or the Linux community. This silly application exists just for fun and entertainment.**
 
 ## Why would I install this?
 Don't ask me! ¯\_(ツ)_/¯
