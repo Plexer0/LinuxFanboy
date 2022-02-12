@@ -9,7 +9,7 @@
 # DEBUG_TESTS=y sh build.sh | Executes every single binary. (Make sure you compile them first!!!)
 
 
-# Environment Checks
+# 1. Environment Checks
 
 # Check if the C++ compiler is installed
 if [ ! -f /usr/bin/g++ ];
@@ -17,9 +17,14 @@ if [ ! -f /usr/bin/g++ ];
 	exit 130
 fi
 
-# Check if rename is installed
-if [ ! -f /usr/bin/rename ];
-	then echo "ERROR: Cannot find rename. Is it installed?"
+# Check for renaming commands
+if [ ! -f /usr/bin/find ];
+	then echo "ERROR: Cannot find /usr/bin/find. This is required to trim binary extensions."
+	exit 130
+fi
+
+if [ ! -f /usr/bin/mv ];
+	then echo "CRITICAL: Cannot find /usr/bin/mv. Your Linux installation may be broken!"
 	exit 130
 fi
 
@@ -46,7 +51,7 @@ pwd=$(pwd)
 # Compile C++ scripts
 for segment in $pwd/usr/bin/*; do
 	echo "Compiling $segment"
-	g++ $segment -o $segment.exe # Random .exe extension is to trim extensions with rename
+	g++ $segment -o $segment.exe # Random .exe extension is to trim all unneeded extensions from the compiled binaries
 done
 
 # Cleanup environment (Can be restored later with restore.sh)
@@ -57,15 +62,15 @@ find -type f -name '*.cpp' | while read f; do mv "$f" "${f%.cpp}"; done
 
 # Build Debian package
 if [ "$SKIP_BUILD" == "y" ];
-        then echo "Building and Installer skipped."
+        then echo "Debian package construction skipped."
 	exit
 else
-echo "Building package..."
+echo "Building Debian package..."
 chmod 555 $pwd/DEBIAN/postinst # Build will fail if permissions aren't correct
 dpkg-deb --build $pwd
 
 # Install package on the current system
-echo "Installing package..."
+echo "Installing Debian package on local system..."
 sudo dpkg -i ../*.deb
 
 # Announce Success
