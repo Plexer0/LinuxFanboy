@@ -48,7 +48,7 @@ fi
 # Assign working directory
 pwd=$(pwd)
 
-# Compile C++ scripts
+# 2. Compile C++ scripts
 for segment in $pwd/usr/bin/*; do
 	echo "Compiling $segment"
 	g++ $segment -o $segment.exe # Random .exe extension is to trim all unneeded extensions from the compiled binaries
@@ -60,7 +60,7 @@ find -type f -name '*.exe' | while read f; do mv "$f" "${f%.exe}"; done
 find -type f -name '*.cpp' | while read f; do mv "$f" "${f%.cpp}"; done
 
 
-# Build Debian package
+# 3. Build Debian package
 if [ "$SKIP_BUILD" == "y" ];
         then echo "Debian package construction skipped."
 	exit
@@ -69,7 +69,7 @@ echo "Building Debian package..."
 chmod 555 $pwd/DEBIAN/postinst # Build will fail if permissions aren't correct
 dpkg-deb --build $pwd
 
-# Install package on the current system
+# 4. Install package on the current system
 echo "Installing Debian package on local system..."
 sudo dpkg -i ../*.deb
 

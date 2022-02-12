@@ -3,10 +3,11 @@
 # Execute the welcome program.
 lf
 
-# Remove stale files left from version control.
+# Remove stale files left from version control if building from source.
 # (You can remove these files manually if you don't trust the script to do so)
 
 rm /build.sh
+rm /restore.sh
 rm /README.md
 rm /CONTRIBUTING.md
 rm /LICENSE
