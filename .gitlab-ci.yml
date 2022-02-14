@@ -15,6 +15,7 @@ build:
   # install the necessary build tools when needed
   # before_script:
   #   - apt update && apt -y install make autoconf
+  allow_failure: false
   script:
     - SKIP_BUILD=y sh build.sh
   artifacts:
