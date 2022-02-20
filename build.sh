@@ -1,12 +1,11 @@
 #!/bin/bash
 
 # This script compiles all the C++ scripts so you can build the Debian package.
-# You need to have the build-essential package and the rename package installed before continuing.
 # The following tags are available to use depending on your needs:
 #
 # sh build.sh | Compile all the C++ modules, build the Debian package, and install it on this system. (Default)
 # SKIP_BUILD=y sh build.sh | Compile all the C++ modules, but don't build and install the package.
-# DEBUG_TESTS=y sh build.sh | Executes every single binary. (Make sure you compile them first!!!)
+# DEBUG_TESTS=y sh build.sh | Executes every single binary (excluding binaries that run in an infinite loop). (Make sure you compile them first!!!)
 
 
 # 1. Environment Checks
