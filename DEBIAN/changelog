@@ -1,3 +1,32 @@
+LinuxFanboy (4.0); urgency=medium
+
+  * Added new comamnds:
+    - smartscreen
+    - snippingtool
+    - proquota
+    - spaceman
+    - dwm
+    - gnulinuxisthebest
+    - recdisc
+    - chadsarethebest
+    - macsarethebest
+    - androidisthebest
+    - vimisthebest
+    - defrag
+
+* Fixed syntax error in build.sh
+* Fixed versioning error in lf
+* Refactored build.sh
+* Made debug tests easier to read
+* Fixed typo in dwm
+* Set correct lisence in Debian metadata
+* Rewrote program cmd
+* Fixed syntax error in restore.sh
+* Added missing } to androidisthebest
+* Refactored build.sh (again)
+
+ -- Plexer <plexer0@protonmail.com>  Sat, 26 Feb 2022 19:52:02 +1100
+
 LinuxFanboy (3.0); urgency=medium
 
   * Added new commands:
