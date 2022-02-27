@@ -1,5 +1,7 @@
 # Linux Fanboy
-[![pipeline status](https://gitlab.com/Plexer0/LinuxFanboy/badges/master/pipeline.svg)](https://gitlab.com/Plexer0/LinuxFanboy/-/commits/master)  
+---
+|[![pipeline status](https://gitlab.com/Plexer0/LinuxFanboy/badges/master/pipeline.svg)](https://gitlab.com/Plexer0/LinuxFanboy/-/commits/master)|  
+---
 This is just a silly little Debian package that adds Windows commands to your /usr/bin folder.
 When you execute them, you will receive a message that a stereotypical hardcore Linux fan would respond. 
 
