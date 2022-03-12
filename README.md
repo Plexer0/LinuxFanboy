@@ -5,6 +5,8 @@ When you execute them, you will receive a message that a stereotypical hardcore 
 
 **Please note that none of these responses are purposely aimed at anyone, nor towards Microsoft or the Linux community. This silly application exists just for fun and entertainment.**
 
+[![LinuxFanboy Demonstration](https://asciinema.org/a/OTSD5F3IpBPfflOs8m4lPBucZ)](https://asciinema.org/a/OTSD5F3IpBPfflOs8m4lPBucZ)
+
 ## Why would I install this?
 Don't ask me! ¯\_(ツ)_/¯
 
