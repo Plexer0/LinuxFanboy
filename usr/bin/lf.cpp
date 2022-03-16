@@ -3,6 +3,7 @@ int main()
 {
 // Announce License
 
+	std::cout << "---\n";
 	std::cout << "Linux Fanboy V4.0, Copyright (C) 2022 Plexer\n";
 	std::cout << "LinuxFanboy comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n";
 	std::cout << "This is free software, and you are welcome to redistribute it\n";
@@ -19,4 +20,5 @@ int main()
 	std::cout << "If you would like to contribute, check out the GitLab project! https://gitlab.com/Plexer0/LinuxFanboy\n";
 	std::cout << "\n";
 	std::cout << "To get started, why don't you run the old-school win command?\n";
+	std::cout << "---\n";
 }
