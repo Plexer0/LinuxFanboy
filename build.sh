@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script compiles all the C++ scripts so you can build the Debian package.
+# This script compiles all the C++ scripts so you can build the Debian package for LinuxFanboy.
 # The following tags are available to use depending on your needs:
 #
 # sh build.sh | Compile all the C++ modules, build the Debian package, and install it on this system. (Default)
@@ -48,6 +48,8 @@ fi
 pwd=$(pwd)
 
 # 2. Compile C++ scripts
+
+# Compile all binaries
 for segment in $pwd/usr/bin/*; do
 	echo "Compiling $segment"
 	g++ $segment -o $segment.exe # Random .exe extension is to trim all unneeded extensions from the compiled binaries
@@ -60,6 +62,8 @@ find -type f -name '*.cpp' | while read f; do mv "$f" "${f%.cpp}"; done
 
 
 # 3. Build Debian package
+
+# Defer build and install is requested
 if [ "$SKIP_BUILD" == "y" ];
         then echo "Debian package construction skipped."
 	exit
@@ -68,10 +72,12 @@ echo "Building Debian package..."
 chmod 555 $pwd/DEBIAN/postinst # Build will fail if permissions aren't correct
 dpkg-deb --build $pwd
 
-# 4. Install package on the current system
+# 4. Install Debian package
+
+# Install package on the local system
 echo "Installing Debian package on local system..."
 sudo dpkg -i ../*.deb
 
-# Announce Success
+# Announce installation success
 echo "LinuxFanboy is installed! :)"
 fi
