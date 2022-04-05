@@ -2,5 +2,6 @@
 int main()
 {
 	std::cout << "ANDROID IS NOT A REAL DISTRIBUTION OF LINUX!\n";
-	std::cout << "Sure it has some similarities, but you can't run neofetch so it sucks.\n";
+	std::cout << "It's plagued with Google's proprietary blobs and Play Services eats all your RAM!.\n";
+	std::cout << "A whole gigabyte of RAM!!!\n";
 }
