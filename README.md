@@ -26,6 +26,7 @@ Then, install the package on the appropiate system.<br>
 ```sudo dpkg -i *.deb```
 
 ## Contributions
-**This area will be populated when someone adds other Windows commands + messages.** <br>
+**The following people have contributed to this package. Thanks for the support!** <br>
+* [Quantenzitrone](https://gitlab.com/Quantenzitrone) - #1 <br>
 
-If you have an idea for a command + message to add, see [CONTRIBUTING.md.](CONTRIBUTING.md)
+_If you have an idea for a command + message to add, see [CONTRIBUTING.md.](CONTRIBUTING.md)_
