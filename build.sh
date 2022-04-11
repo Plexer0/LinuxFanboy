@@ -27,6 +27,19 @@ if [ ! -f /usr/bin/mv ];
 	exit 130
 fi
 
+# Check for Wine as it may cause conflicts
+if [ -f /usr/bin/wine ];
+	then echo "WARNING: Wine is installed on this system. Some messages (such as regedit) may cause conflicts! Please remove or rename regedit in the repository folder"
+	while true; do
+        read -r -p "Do you wish to continue? (Y/N): " answer
+        case $answer in
+                [Yy]* ) break;; # User responds Y
+                [Nn]* ) echo "Aborted. No changes were made."; exit;; # User responds N
+                * ) echo "Unknown response. Try again.";;
+        esac
+done
+fi
+
 # Warn user if sudo/root account is detected
 if [ $(id -u) -eq 0 ];
 	then echo "WARNING: sudo/root user detected. This may cause unwanted behaviour!"
