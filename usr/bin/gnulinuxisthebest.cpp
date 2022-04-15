@@ -21,6 +21,6 @@ int main()
     std::cout << "\n";
     std::cout << "Be grateful for your abilities and your incredible success and your considerable fame. Continue to use that success and fame for good, not evil. Also, be especially grateful for Linux' huge contribution to that success. You, RMS, the Free Software Foundation, and GNU software have reached their current high profiles largely on the back of Linux. You have changed the world. Now, go forth and don't be a nag.\n";
     std::cout << "Thanks for listening.\n";
-    system("sleep 5");
     std::cout << "---------------------------------------\n";
+    system("sleep 5");
 }
