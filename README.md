@@ -8,7 +8,7 @@ When you execute them, you will receive a message that a stereotypical hardcore 
 [![LinuxFanboy Demonstration](https://asciinema.org/a/OTSD5F3IpBPfflOs8m4lPBucZ)](https://asciinema.org/a/OTSD5F3IpBPfflOs8m4lPBucZ)
 
 ## Why would I install this?
-Don't ask me! ¯\_(ツ)_/¯
+Don't ask me! ¯\\_(ツ)_/¯
 
 ## Build Instructions
 Make sure your Debian build tools are installed correctly.<br>
