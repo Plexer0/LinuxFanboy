@@ -7,6 +7,10 @@ When you execute them, you will receive a message that a stereotypical hardcore 
 
 [![LinuxFanboy Demonstration](https://asciinema.org/a/OTSD5F3IpBPfflOs8m4lPBucZ)](https://asciinema.org/a/OTSD5F3IpBPfflOs8m4lPBucZ)
 
+# PROJECT DEPRECATION NOTICE
+**This project is no longer maintained and is now archived. No new updates or contributions will be accepted.  
+Continue to use this software at your own risk!**
+
 ## Why would I install this?
 Don't ask me! ¯\\_(ツ)_/¯
 
